@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="xe_robot1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.13728801658958 0.220515465177451 0.298506871979834"
+        rpy="0 0 0" />
+      <mass
+        value="2.10553690209286" />
+      <inertia
+        ixx="0.00483893066541074"
+        ixy="6.55835351697836E-06"
+        ixz="-0.000765230931705902"
+        iyy="0.0208139649266864"
+        iyz="-1.68544154875728E-06"
+        izz="0.0243618892718643" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_FL">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -0.0224999999999971 -3.33066907387547E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.245078420633234" />
+      <inertia
+        ixx="0.000173408899773564"
+        ixy="2.5410988417629E-21"
+        ixz="-2.66439306805522E-35"
+        iyy="0.00026884360531269"
+        iyz="-9.99625480403547E-19"
+        izz="0.000173408899773564" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_FL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_FL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FL"
+    type="continuous">
+    <origin
+      xyz="0.23558 0.3345 0.26989"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_FL" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_BL">
+    <inertial>
+      <origin
+        xyz="3.46944695195361E-17 -0.0224999999999972 -3.27515792264421E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.245078420633234" />
+      <inertia
+        ixx="0.000173408899773564"
+        ixy="2.54109884176291E-21"
+        ixz="-2.66439306805523E-35"
+        iyy="0.00026884360531269"
+        iyz="-9.99625480403547E-19"
+        izz="0.000173408899773564" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_BL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_BL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BL"
+    type="continuous">
+    <origin
+      xyz="0.01058 0.3345 0.26989"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_BL" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_BR">
+    <inertial>
+      <origin
+        xyz="-7.63278329429795E-17 0.0225 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.245078420633234" />
+      <inertia
+        ixx="0.000173408899773563"
+        ixy="-1.03927513262585E-20"
+        ixz="-1.4915059061066E-20"
+        iyy="0.00026884360531269"
+        iyz="1.24557166024149E-20"
+        izz="0.000173408899773563" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_BR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_BR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BR"
+    type="continuous">
+    <origin
+      xyz="0.01058 0.1065 0.26989"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_BR" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_FR">
+    <inertial>
+      <origin
+        xyz="0 0.0225 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.245078420633234" />
+      <inertia
+        ixx="0.000173408899773563"
+        ixy="2.65864740651599E-20"
+        ixz="-8.10239953607972E-21"
+        iyy="0.00026884360531269"
+        iyz="1.31606664565266E-20"
+        izz="0.000173408899773563" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_FR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_FR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FR"
+    type="continuous">
+    <origin
+      xyz="0.23558 0.1065 0.26989"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_FR" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_lidar">
+    <inertial>
+      <origin
+        xyz="-0.0028645293483337 3.96242181058271E-06 -0.0194179426453188"
+        rpy="0 0 0" />
+      <mass
+        value="0.367833721247091" />
+      <inertia
+        ixx="9.17173875121383E-05"
+        ixy="8.82157351032534E-09"
+        ixz="1.20873061883232E-06"
+        iyy="9.31288280545567E-05"
+        iyz="-3.27004823891947E-11"
+        izz="0.000123425149052192" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/link_lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lidar"
+    type="fixed">
+    <origin
+      xyz="0.29548 0.223 0.37152"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="arm1_link">
+    <inertial>
+      <origin
+        xyz="0 0 0.00522045204068089"
+        rpy="0 0 0" />
+      <mass
+        value="0.257593126460189" />
+      <inertia
+        ixx="0.00041750726098785"
+        ixy="4.13275280220637E-06"
+        ixz="4.6068051024411E-20"
+        iyy="0.000422315370653696"
+        iyz="-4.84052360279339E-20"
+        izz="0.000205783410092817" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/arm1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/arm1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm1_joint"
+    type="revolute">
+    <origin
+      xyz="0.13058 0.2205 0.35239"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="arm1_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="5"
+      velocity="1" />
+  </joint>
+  <link
+    name="arm2_link">
+    <inertial>
+      <origin
+        xyz="0.113386249842717 0.0101690194811119 -0.00057487857689742"
+        rpy="0 0 0" />
+      <mass
+        value="0.175949552181409" />
+      <inertia
+        ixx="4.04573284756106E-05"
+        ixy="-5.04958584218638E-06"
+        ixz="1.06937501559366E-06"
+        iyy="0.000122667375385099"
+        iyz="-1.35525271560688E-20"
+        izz="0.000129037314053261" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/arm2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/arm2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0044873 -0.0078016 0.0975"
+      rpy="0 -0.61041 -0.52197" />
+    <parent
+      link="arm1_link" />
+    <child
+      link="arm2_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.3"
+      upper="1.3"
+      effort="5"
+      velocity="1" />
+  </joint>
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 5.55111512312578E-17 -0.00499999999999995"
+        rpy="0 0 0" />
+      <mass
+        value="0.001" />
+      <inertia
+        ixx="1.66666666666667E-08"
+        ixy="-5.05218796286131E-25"
+        ixz="-9.98942134567634E-25"
+        iyy="1.66666666666667E-08"
+        iyz="7.69202800005368E-25"
+        izz="1.66666666666667E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xe_robot1/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="0.21726 0.2105 0.33239"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+
+      <!-- Joints -->
+      <leftFrontJoint>joint_FL</leftFrontJoint>
+      <rightFrontJoint>joint_FR</rightFrontJoint>
+      <leftRearJoint>joint_BL</leftRearJoint>
+      <rightRearJoint>joint_BR</rightRearJoint>
+
+      <!-- Thông số vật lý -->
+      <wheelSeparation>0.4</wheelSeparation>
+      <wheelDiameter>0.215</wheelDiameter>
+      <torque>20</torque>
+
+      <!-- Frame -->
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <odometryFrame>odom</odometryFrame>
+
+      <!-- Topic -->
+      <topicName>cmd_vel</topicName>
+      <odometryTopic>odom</odometryTopic>
+
+      <!-- Tùy chọn publish -->
+      <broadcastTF>true</broadcastTF>
+      <publishTf>true</publishTf>
+      <publishWheelTF>true</publishWheelTF>
+      <publishWheelJointState>true</publishWheelJointState>
+
+      <!-- Nguồn odometry -->
+      <odometrySource>world</odometrySource>
+    </plugin>
+  </gazebo>
+
+
+  <gazebo reference="link_lidar">
+  <sensor name="lidar_sensor" type="ray">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>true</visualize>
+    <update_rate>10.0</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>720</samples>
+          <resolution>1</resolution>
+          <min_angle>-1.5708</min_angle>
+          <max_angle>1.5708</max_angle>
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.1</min>
+        <max>10.0</max>
+        <resolution>0.01</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <mean>0.0</mean>
+        <stddev>0.01</stddev>
+      </noise>
+    </ray>
+    <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_laser.so">
+      <topicName>scan</topicName>
+      <frameName>link_lidar</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <pose>0 0 0 0 0 0</pose>
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <topicName>/imu/data</topicName>
+        <frameName>imu_link</frameName>
+        <updateRateHZ>100.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Transmission cho khớp arm1 -->
+  <transmission name="arm1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm1_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- Transmission cho khớp arm2 -->
+  <transmission name="arm2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm2_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm2_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+  </gazebo>
+
+</robot>
