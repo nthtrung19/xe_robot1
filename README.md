@@ -1,3 +1,9 @@
+## Package
+package cần để điều khiển tay máy
+```bash
+sudo apt-get install ros-noetic-effort-controllers
+```
+
 ## ▶️ Chạy mô phỏng Gazebo  
 Chạy lệnh sau để mở mô phỏng trong Gazebo:  
 ```bash
