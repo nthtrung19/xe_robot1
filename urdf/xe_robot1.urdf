@@ -478,38 +478,25 @@
     <axis
       xyz="0 0 0" />
   </joint>
+  <!-- THÊM plugin differential_drive_controller -->
   <gazebo>
-    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <updateRate>100.0</updateRate>
-      <robotNamespace>/</robotNamespace>
-
-      <!-- Joints -->
-      <leftFrontJoint>joint_FL</leftFrontJoint>
-      <rightFrontJoint>joint_FR</rightFrontJoint>
-      <leftRearJoint>joint_BL</leftRearJoint>
-      <rightRearJoint>joint_BR</rightRearJoint>
-
-      <!-- Thông số vật lý -->
-      <wheelSeparation>0.4</wheelSeparation>
+      <leftJoint>joint_BL</leftJoint>
+      <rightJoint>joint_BR</rightJoint>
+      <wheelSeparation>0.5380</wheelSeparation>
       <wheelDiameter>0.215</wheelDiameter>
-      <torque>20</torque>
-
-      <!-- Frame -->
-      <robotBaseFrame>base_link</robotBaseFrame>
-      <odometryFrame>odom</odometryFrame>
-
-      <!-- Topic -->
-      <topicName>cmd_vel</topicName>
+      <wheelAcceleration>1.0</wheelAcceleration>
+      <wheelTorque>20</wheelTorque>
+      <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
-
-      <!-- Tùy chọn publish -->
-      <broadcastTF>true</broadcastTF>
-      <publishTf>true</publishTf>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <odometrySource>1</odometrySource>
       <publishWheelTF>true</publishWheelTF>
+      <publishOdom>true</publishOdom>
       <publishWheelJointState>true</publishWheelJointState>
-
-      <!-- Nguồn odometry -->
-      <odometrySource>world</odometrySource>
+      <legacyMode>false</legacyMode>
     </plugin>
   </gazebo>
 
