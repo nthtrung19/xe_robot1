@@ -10,7 +10,6 @@ Chạy lệnh sau để mở mô phỏng trong Gazebo:
 roslaunch xe_robot1 gazebo.launch
 ```  
 ## 🖥️ Mở RViz  
-Em đã rất cố gắng launch 2 cái này lại cùng lúc nhưng mà lực bất tòng tâm 😢  
 Mở một terminal mới:  
 ```bash
 roslaunch xe_robot1 display.launch
@@ -50,7 +49,6 @@ Chạy lệnh sau để kiểm tra dữ liệu vị trí từ encoder:
 ```bash
 rostopic echo /odom
 ```
-Vì tốc độ xuất dữ liệu rất nhanh nên anh hãy nhấn `Ctrl + C` sớm, sau đó xem kết quả in ra.  
 ![Odom](https://github.com/user-attachments/assets/ef73d93d-755c-41e1-9fab-8192c79e2894)  
 Robot cách `fixed_frame` khoảng:  
 x: 2.1352531397559322  
