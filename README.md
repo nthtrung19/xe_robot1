@@ -55,7 +55,3 @@ x: 2.1352531397559322
 y: 0.19274187436668686  
 z: -0.2249728070064274  
 Khá là chuẩn. Z = -0.22 mà không phải 0 là vì khi em vẽ trong SolidWorks, em không đặt đúng vào gốc toạ độ mà vẽ lệch xuống dưới, nên mới bị -0.22. Mong anh bỏ qua :v
-
-
-
->>>>>>> Cập nhật README mô tả chạy mô phỏng và điều khiển robot
